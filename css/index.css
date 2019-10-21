@@ -94,7 +94,113 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.navigation {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  background-color: #3cb371;
+  align-items: center;
+}
+.navigation .linksWrapper {
+  width: 40%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+.logo {
+  background: blue;
+  width: 18%;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+.logo i {
+  color: aqua;
+}
+.logo h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.navLinks {
+  width: 100%;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.navLinks a {
+  border: 1px solid white;
+  width: 20%;
+  border-radius: 2rem;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.navLinks a:hover {
+  background: pink;
+  color: black;
+}
+.container {
+  background-color: #3cb371;
+}
+.container .headerImg {
+  height: 50vh;
+  background: url(../images/bike.jpg) blue;
+  background-position: center;
+  background-size: 100%;
+}
+.pitch {
+  width: 40%;
+  height: 100%;
+  color: white;
+  background-color: rgba(60, 179, 113, 0.75);
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.pitch .pitchContent {
+  border-radius: 50rem;
+  height: 40%;
+  width: 75%;
+}
+.pitch .pitchContent p {
+  text-align: center;
+  font-size: 4rem;
+}
+.pitch .cta {
+  width: 55%;
+  height: 15%;
+  font-size: 3rem;
+  background-color: #3cb371;
+  border: 5px solid white;
+  border-radius: 30rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.pitch .cta:hover {
+  background-color: pink;
+  color: black;
 }

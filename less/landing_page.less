@@ -1,0 +1,49 @@
+.container {
+   background-color: @bg_color;
+
+   .headerImg {
+      height: 50vh;
+      background: url(../images/bike.jpg) blue;
+      background-position: center;
+      background-size: 100%;
+   }
+}
+
+.pitch {
+   // border: 1px solid red;
+   width: 40%;
+   height: 100%;
+   color: white;
+   background-color: rgba(60, 179, 113, 0.75);
+
+   .flex(@justify: space-around, @direction: column);
+   align-items: center;
+
+   .pitchContent {
+      // border: 1px solid white;
+      // background-color: rgba(60, 179, 113, 0.5);
+      border-radius: 50rem;
+      height: 40%;
+      width: 75%;
+      p {
+         text-align: center;
+         font-size: 4rem;
+      }
+   }
+
+   .cta {
+      width: 55%;
+      height: 15%;
+      font-size: 3rem;
+      background-color: @bg_color;
+      border: 5px solid white;
+      border-radius: 30rem;
+      .flex();
+      align-items: center;
+
+      &:hover {
+         background-color: pink;
+         color: black;
+      }
+   }
+}

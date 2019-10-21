@@ -1,0 +1,52 @@
+.navigation {
+   font-size: 2rem;
+   color: white;
+   .flex(@justify: space-between);
+   background-color: @bg_color;
+   align-items: center;
+
+   .linksWrapper {
+      // border: 1px solid red;
+      width: 40%;
+      height: 5rem;
+      .flex();
+   }
+}
+
+  .logo {
+      background: blue;
+      width: 18%;
+      border-radius: 4rem;
+      .flex();
+
+      i {
+         color: aqua;
+      }
+
+      h1 {
+         .flex();
+         align-items: center;
+      }
+   }
+
+.navLinks {
+   width: 100%;
+   margin-right: 1rem;
+   .flex(@justify: space-between);
+   align-items: center;
+   // border:1px solid blue;
+
+   a {
+      border: 1px solid white;
+      width: 20%;
+      border-radius: 2rem;
+      height: 50%;
+      .flex();
+      align-items: center;
+
+      &:hover {
+         background: @hover_bg_color;
+         color: @hover_color;
+      }
+   }
+}
