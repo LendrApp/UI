@@ -47,3 +47,48 @@
       }
    }
 }
+
+.possibilities {
+   // border: 1px solid red;
+   .flex(@direction: column);
+   background-color: white;
+
+   .possTitle {
+      margin-top: 8rem;
+      .flex();
+      width: 100%;
+      text-decoration: underline;
+   }
+   .possContent {
+      .flex(@justify: space-around);
+      // border: 1px solid blue;
+      width: 100%;
+      margin: 3rem 0;
+      height: 40rem;
+      background: lightyellow;
+
+      img {
+         // border: 1px solid red;
+         width: 45%;
+         .flex();
+      }
+      .possDescription {
+         // border: 1px solid pink;
+         width: 35%;
+         .flex(@justify: space-evenly, @direction:column);
+
+         p {
+            height: 10rem;
+            border-top: 2px solid lightgrey;
+            border-bottom: 2px solid lightgrey;
+            font-size: 2.5rem;
+            .flex();
+            align-items: center;
+            text-align: center;
+         }
+      }
+   }
+   .miscItems {
+      flex-direction: row-reverse;
+   }
+}

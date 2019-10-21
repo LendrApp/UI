@@ -204,3 +204,58 @@ img {
   background-color: aqua;
   color: black;
 }
+.possibilities {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: white;
+}
+.possibilities .possTitle {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  width: 100%;
+  text-decoration: underline;
+}
+.possibilities .possContent {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 3rem 0;
+  height: 40rem;
+  background: lightyellow;
+}
+.possibilities .possContent img {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+.possibilities .possContent .possDescription {
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: column;
+}
+.possibilities .possContent .possDescription p {
+  height: 10rem;
+  border-top: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.possibilities .miscItems {
+  flex-direction: row-reverse;
+}
