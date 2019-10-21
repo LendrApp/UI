@@ -116,7 +116,7 @@ img {
   flex-direction: row;
 }
 .logo {
-  background: blue;
+  background: forestgreen;
   width: 18%;
   border-radius: 4rem;
   display: flex;
@@ -155,7 +155,7 @@ img {
   align-items: center;
 }
 .navLinks a:hover {
-  background: pink;
+  background: aqua;
   color: black;
 }
 .container {
@@ -201,6 +201,6 @@ img {
   align-items: center;
 }
 .pitch .cta:hover {
-  background-color: pink;
+  background-color: aqua;
   color: black;
 }
