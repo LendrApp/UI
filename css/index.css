@@ -1,0 +1,577 @@
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+cite {
+  font-style: normal;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Ubuntu';
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #222;
+  background-color: #3cb371;
+  margin: 3rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Ubuntu';
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.navigation .navWrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .navigation .navWrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+}
+.navigation .navWrapper .linksWrapper {
+  width: 60%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .navigation .navWrapper .linksWrapper {
+    width: 100%;
+  }
+}
+.navLinks {
+  width: 100%;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.navLinks a {
+  width: 22%;
+  border-radius: 2rem;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.logoNav {
+  width: 175px;
+}
+@media (max-width: 800px) {
+  .logoNav {
+    width: 100%;
+  }
+}
+.logoNav .logo {
+  width: 100%;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+.logoNav .logo i {
+  color: aqua;
+  font-size: 4rem;
+}
+.logoNav .logo h1 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+footer {
+  margin: 3rem 0;
+  background-color: #3cb371;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footerContent {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footerContent p {
+  height: 2.5rem;
+}
+footer .footerContent a {
+  width: 100px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.container {
+  background-color: white;
+}
+.container .headerImg {
+  height: 50rem;
+  background: url(../images/bike.jpg) blue;
+  background-position: center;
+  background-size: 100%;
+}
+@media (max-width: 800px) {
+  .container .headerImg {
+    height: 40rem;
+  }
+}
+.pitch {
+  width: 450px;
+  height: 100%;
+  color: white;
+  background-color: rgba(60, 179, 113, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .pitch {
+    width: 100%;
+  }
+}
+.pitch .pitchContent {
+  height: 60%;
+  width: 75%;
+}
+@media (max-width: 800px) {
+  .pitch .pitchContent {
+    height: 40%;
+  }
+}
+.pitch .pitchContent p {
+  text-align: center;
+  font-size: 4rem;
+}
+@media (max-width: 600px) {
+  .pitch .pitchContent p {
+    font-size: 3.5rem;
+  }
+}
+.pitch .cta {
+  width: 240px;
+  height: 55px;
+  font-size: 3rem;
+  background-color: #3cb371;
+  border: 5px solid white;
+  border-radius: 30rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.pitch .cta:hover {
+  background-color: aqua;
+  color: black;
+}
+.possibilities {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: white;
+}
+.possibilities .possTitle {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+.possibilities .possContent {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 3rem 0;
+  height: 40rem;
+  background: lightyellow;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .possibilities .possContent {
+    flex-direction: column;
+    height: 50rem;
+    justify-content: space-evenly;
+  }
+}
+.possibilities .possContent img {
+  width: 45%;
+  height: 30rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+@media (max-width: 600px) {
+  .possibilities .possContent img {
+    height: 25rem;
+  }
+}
+@media (max-width: 500px) {
+  .possibilities .possContent img {
+    height: 25rem;
+    width: 65%;
+  }
+}
+.possibilities .possContent .possDescription {
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .possibilities .possContent .possDescription {
+    width: 100%;
+    height: 45%;
+  }
+}
+.possibilities .possContent .possDescription p {
+  height: 13rem;
+  border-top: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .possibilities .possContent .possDescription p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .possibilities .possContent .possDescription p {
+    height: 8rem;
+  }
+}
+.possibilities .miscItems {
+  flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .possibilities .miscItems {
+    flex-direction: column;
+  }
+}
+.testimonials {
+  margin: 4rem 0;
+  height: 50rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .testimonials {
+    height: 30rem;
+  }
+}
+.testimonials .testTitle {
+  margin-bottom: 4rem;
+}
+.testimonials .userWrapper {
+  width: 100%;
+  background: url(../images/tool_drawer.jpg) blue;
+  background-position: center;
+  background-size: 175%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 80rem;
+}
+@media (max-width: 500px) {
+  .testimonials .userWrapper {
+    justify-content: space-around;
+    height: 100%;
+  }
+}
+.testimonials .userWrapper .userRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+  margin: 4rem 0;
+}
+@media (max-width: 500px) {
+  .testimonials .userWrapper .userRow {
+    flex-direction: column;
+    align-content: space-around;
+    width: 45%;
+    height: 100%;
+    margin: 0;
+  }
+}
+.testimonials .userWrapper .userRow .user {
+  border: 1px solid white;
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .testimonials .userWrapper .userRow .user {
+    width: 100%;
+  }
+}
+.testimonials .userWrapper .userRow .user p {
+  color: white;
+  text-align: center;
+}
+.cta2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.cta2 .cta2Title {
+  width: 40%;
+  text-align: center;
+  margin: 3rem 0;
+}
+@media (max-width: 500px) {
+  .cta2 .cta2Title {
+    width: 100%;
+  }
+}
+.cta2 .ctaButton {
+  width: 200px;
+  border: 3px solid forestgreen;
+  border-radius: 4rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: #3cb371;
+}
+.cta2 .ctaButton:hover {
+  background-color: aqua;
+}
+.cta2 .ctaButton a {
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+.cta2 .ctaButton a:hover {
+  color: black;
+}
+.aboutHdr {
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: underline;
+}
+.profileCont {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+  background-color: lightyellow;
+  margin: 4rem 0;
+  height: 44rem;
+}
+@media (max-width: 800px) {
+  .profileCont {
+    height: 33rem;
+  }
+}
+.profileCont .profile {
+  width: 30%;
+  height: 100%;
+  transition-duration: 0.5s;
+}
+.profileCont .profile:hover {
+  transform: scale(1.1);
+}
+.profileCont .profile img {
+  height: 72%;
+  border-radius: 8rem;
+}
+@media (max-width: 600px) {
+  .profileCont .profile img {
+    height: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .profileCont .profile img {
+    height: 45%;
+  }
+}
+.profileCont .profile p {
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+@media (max-width: 800px) {
+  .profileCont .profile p {
+    height: 8%;
+  }
+}
+@media (max-width: 600px) {
+  .profileCont .profile p {
+    height: 13%;
+  }
+}
+@media (max-width: 500px) {
+  .profileCont .profile p {
+    height: 15%;
+  }
+}
+.profileCont .profile a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+.profileCont .profile a img {
+  height: 3rem;
+}
+@media (max-width: 800px) {
+  .profileCont .profile a img {
+    height: 2rem;
+  }
+}

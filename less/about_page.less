@@ -1,0 +1,72 @@
+.aboutHdr {
+   height: 9rem;
+   .flex();
+   align-items: center;
+   text-decoration: underline;
+}
+
+.profileCont {
+   .flex(@justify: space-evenly);
+   // border:1px solid red;
+   background-color: lightyellow;
+   margin: 4rem 0;
+   height: 44rem;
+
+   @media @tablet {
+      height: 33rem;
+   }
+
+   .profile {
+      width: 30%;
+      // border:1px solid blue;
+      height: 100%;
+      transition-duration: .5s;
+      &:hover {
+               transform: scale(1.1);
+            }
+      
+
+      img {
+         height: 72%;
+         border-radius: 8rem;
+
+         @media @bigMobile {
+            height: 50%;
+         }
+         @media @mobile {
+            height: 45%;
+         }
+      }
+
+      p {
+         text-align: center;
+         border-bottom: 1px solid grey;
+
+
+         @media @tablet {
+            height:8%;
+         }
+
+         @media @bigMobile {
+            height: 13%
+         }
+
+         @media @mobile {
+            // border: 1px solid red;
+            height: 15%;
+         }
+      }
+
+      a {
+         .flex();
+         img {
+            height: 3rem;
+
+            @media @tablet {
+               height: 2rem;
+            }
+            
+         }
+      }
+   }
+}

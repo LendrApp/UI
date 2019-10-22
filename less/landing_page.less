@@ -1,0 +1,251 @@
+.container {
+   background-color: white;
+   .headerImg {
+      // border:1px solid red;
+      height: 50rem;
+      background: url(../images/bike.jpg) blue;
+      background-position: center;
+      background-size: 100%;
+
+      @media @tablet {
+         height: 40rem;
+      }
+   }
+}
+
+.pitch {
+   // border: 1px solid red;
+   width: 450px;
+   height: 100%;
+   color: white;
+   background-color: rgba(60, 179, 113, 0.75);
+
+   @media @tablet {
+      width: 100%;
+   }
+
+   .flex(@justify: space-evenly, @direction: column);
+   align-items: center;
+
+   .pitchContent {
+      height: 60%;
+      width: 75%;
+      // border:1px solid red;
+
+      @media @tablet {
+         height: 40%;
+      }
+
+      p {
+         text-align: center;
+         font-size: 4rem;
+
+         @media @bigMobile {
+            font-size: 3.5rem;
+         }
+      }
+   }
+
+   .cta {
+      width: 240px;
+      height: 55px;
+      font-size: 3rem;
+      background-color: @bg_color;
+      border: 5px solid white;
+      border-radius: 30rem;
+      .flex();
+      align-items: center;
+
+      &:hover {
+         background-color: @hover_bg_color;
+         color: black;
+      }
+   }
+}
+
+.possibilities {
+   // border: 1px solid red;
+   .flex(@direction: column);
+   background-color: white;
+
+   .possTitle {
+      margin-top: 4rem;
+      .flex();
+      width: 100%;
+   }
+   .possContent {
+      .flex(@justify: space-around);
+      // border: 1px solid blue;
+      width: 100%;
+      margin: 3rem 0;
+      height: 40rem;
+      background: lightyellow;
+      align-items: center;
+
+      @media @mobile {
+         flex-direction: column;
+         height: 50rem;
+         justify-content: space-evenly;
+      }
+
+      img {
+         // border: 1px solid red;
+         width: 45%;
+         height: 30rem;
+         border-radius: 8px;
+         .flex();
+
+         @media @bigMobile {
+            height: 25rem;
+         }
+
+         @media @mobile {
+            height: 25rem;
+            width: 65%;
+         }
+      }
+      .possDescription {
+         // border: 1px solid pink;
+         width: 35%;
+         .flex(@justify: space-evenly, @direction:column);
+         height: 100%;
+
+         @media @mobile {
+            width: 100%;
+            height: 45%;
+         }
+
+         p {
+            height: 13rem;
+            border-top: 2px solid lightgrey;
+            border-bottom: 2px solid lightgrey;
+            font-size: 2.5rem;
+            .flex();
+            align-items: center;
+            text-align: center;
+
+            @media @bigMobile {
+               font-size: 2rem;
+            }
+            @media @mobile {
+               height: 8rem;
+            }
+         }
+      }
+   }
+   .miscItems {
+      flex-direction: row-reverse;
+
+      @media @mobile {
+         flex-direction: column;
+      }
+   }
+}
+
+.testimonials {
+   margin: 4rem 0;
+   // border: 1px solid red;
+   height: 50rem;
+   background-color: white;
+   .flex(@direction: column);
+   align-items: center;
+
+   @media @tablet {
+      height: 30rem;
+   }
+   .testTitle{
+      margin-bottom: 4rem;
+   }
+
+   .userWrapper {
+      width: 100%;
+      background: url(../images/tool_drawer.jpg) blue;
+      background-position: center;
+      background-size: 175%;
+      .flex();
+      flex-wrap: wrap;
+      height: 80rem;
+
+      @media @mobile {
+         justify-content: space-around;
+         height: 100%;
+
+      }
+
+      .userRow {
+         width: 100%;
+         .flex(@justify: space-evenly);
+         margin: 4rem 0;
+
+         @media @mobile {
+            flex-direction: column;
+            align-content: space-around;
+            width: 45%;
+            height: 100%;
+            margin: 0;
+         }
+
+         .user {
+            border: 1px solid white;
+            width: 35%;
+            background-color: rgba(0, 0, 0, 0.7);
+            .flex(@direction: column);
+            align-items: center;
+            border-radius: 5px;
+
+            @media @mobile {
+               width: 100%;
+            }
+
+            p {
+               color: white;
+               text-align: center;
+            }
+         }
+      }
+   }
+}
+
+.cta2 {
+   .flex(@direction: column);
+   align-items: center;
+   padding-bottom: 4rem;
+
+   .cta2Title {
+      width: 40%;
+      text-align: center;
+      margin: 3rem 0;
+
+      @media @mobile {
+         width: 100%;
+      }
+   }
+
+   .ctaButton {
+      width: 200px;
+      border: 3px solid forestgreen;
+      border-radius: 4rem;
+      height: 5rem;
+      .flex();
+      align-items: center;
+      background-color: @bg_color;
+
+      &:hover {
+         background-color: @hover_bg_color;
+      }
+
+      a {
+         height: 4rem;
+         font-size: 2.5rem;
+         width: 100%;
+         .flex();
+         align-items: center;
+         color: white;
+         &:hover {
+            color: black;
+         }
+      }
+   }
+}
+
+
