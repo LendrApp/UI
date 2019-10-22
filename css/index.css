@@ -513,6 +513,11 @@ footer .footerContent a:hover {
   margin: 4rem 0;
   height: 44rem;
 }
+@media (max-width: 800px) {
+  .profileCont {
+    height: 33rem;
+  }
+}
 .profileCont .profile {
   width: 30%;
   height: 100%;
@@ -528,6 +533,11 @@ footer .footerContent a:hover {
 .profileCont .profile p {
   text-align: center;
 }
+@media (max-width: 800px) {
+  .profileCont .profile p {
+    height: 8%;
+  }
+}
 .profileCont .profile a {
   display: flex;
   justify-content: center;
@@ -536,4 +546,9 @@ footer .footerContent a:hover {
 }
 .profileCont .profile a img {
   height: 3rem;
+}
+@media (max-width: 800px) {
+  .profileCont .profile a img {
+    height: 2rem;
+  }
 }
