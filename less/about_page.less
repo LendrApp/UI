@@ -1,0 +1,42 @@
+.aboutHdr {
+   height: 9rem;
+   .flex();
+   align-items: center;
+   text-decoration: underline;
+}
+
+.profileCont {
+   .flex(@justify: space-evenly);
+   // border:1px solid red;
+   background-color: lightyellow;
+   margin: 4rem 0;
+   height: 44rem;
+
+   .profile {
+      width: 30%;
+      // border:1px solid blue;
+      height: 100%;
+      transition-duration: .5s;
+      &:hover {
+               transform: scale(1.1);
+            }
+
+      img {
+         height: 72%;
+         border-radius: 8rem;
+      }
+
+      p {
+         text-align: center;
+      }
+
+      a {
+         .flex();
+         img {
+            height: 3rem;
+
+            
+         }
+      }
+   }
+}

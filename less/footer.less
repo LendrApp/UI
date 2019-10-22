@@ -1,0 +1,32 @@
+footer {
+   margin: 3rem 0;
+   background-color: @bg_color;
+   height: 5rem;
+   .flex();
+   align-items: center;
+
+   .footerContent {
+      .maxWidth();
+      .flex(@justify: space-evenly);
+      align-items: center;
+      
+
+      p {
+         height: 2.5rem;
+      }
+
+      a {
+         border: 3px solid white;
+         width: 100px;
+         border-radius: 2rem;
+         height: 50%;
+         .flex();
+         align-items: center;
+
+         &:hover {
+            background: @hover_bg_color;
+            color: @hover_color;
+         }
+      }
+   }
+}
