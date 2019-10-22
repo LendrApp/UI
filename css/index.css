@@ -103,7 +103,7 @@ img {
 .navigation {
   font-size: 2rem;
   color: white;
-  background-color: #3cb371;
+  margin-bottom: 2rem;
 }
 .navigation .navWrapper {
   max-width: 1000px;
@@ -146,7 +146,6 @@ img {
   align-items: center;
 }
 .navLinks a {
-  border: 1px solid white;
   width: 22%;
   border-radius: 2rem;
   height: 50%;
@@ -155,11 +154,6 @@ img {
   align-content: center;
   flex-direction: row;
   align-items: center;
-}
-.navLinks a:hover {
-  background: aqua;
-  color: black;
-  border: 1px solid black;
 }
 .logoNav {
   width: 175px;
@@ -170,7 +164,6 @@ img {
   }
 }
 .logoNav .logo {
-  background: forestgreen;
   width: 100%;
   border-radius: 4rem;
   display: flex;
@@ -214,19 +207,13 @@ footer .footerContent p {
   height: 2.5rem;
 }
 footer .footerContent a {
-  border: 3px solid white;
   width: 100px;
-  border-radius: 2rem;
   height: 50%;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: row;
   align-items: center;
-}
-footer .footerContent a:hover {
-  background: aqua;
-  color: black;
 }
 .container {
   background-color: white;
@@ -307,7 +294,6 @@ footer .footerContent a:hover {
   align-content: center;
   flex-direction: row;
   width: 100%;
-  text-decoration: underline;
 }
 .possibilities .possContent {
   display: flex;
@@ -330,6 +316,7 @@ footer .footerContent a:hover {
 .possibilities .possContent img {
   width: 45%;
   height: 30rem;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -406,7 +393,7 @@ footer .footerContent a:hover {
   }
 }
 .testimonials .testTitle {
-  text-decoration: underline;
+  margin-bottom: 4rem;
 }
 .testimonials .userWrapper {
   width: 100%;
@@ -419,7 +406,12 @@ footer .footerContent a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   height: 80rem;
-  margin: 0 0;
+}
+@media (max-width: 500px) {
+  .testimonials .userWrapper {
+    justify-content: space-around;
+    height: 100%;
+  }
 }
 .testimonials .userWrapper .userRow {
   width: 100%;
@@ -428,6 +420,15 @@ footer .footerContent a:hover {
   align-content: center;
   flex-direction: row;
   margin: 4rem 0;
+}
+@media (max-width: 500px) {
+  .testimonials .userWrapper .userRow {
+    flex-direction: column;
+    align-content: space-around;
+    width: 45%;
+    height: 100%;
+    margin: 0;
+  }
 }
 .testimonials .userWrapper .userRow .user {
   border: 1px solid white;
@@ -438,10 +439,11 @@ footer .footerContent a:hover {
   align-content: center;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
 }
 @media (max-width: 500px) {
   .testimonials .userWrapper .userRow .user {
-    width: 50%;
+    width: 100%;
   }
 }
 .testimonials .userWrapper .userRow .user p {
@@ -459,7 +461,7 @@ footer .footerContent a:hover {
 .cta2 .cta2Title {
   width: 40%;
   text-align: center;
-  text-decoration: underline;
+  margin: 3rem 0;
 }
 @media (max-width: 500px) {
   .cta2 .cta2Title {
@@ -468,7 +470,7 @@ footer .footerContent a:hover {
 }
 .cta2 .ctaButton {
   width: 200px;
-  border: 3px solid black;
+  border: 3px solid forestgreen;
   border-radius: 4rem;
   height: 5rem;
   display: flex;
@@ -530,12 +532,33 @@ footer .footerContent a:hover {
   height: 72%;
   border-radius: 8rem;
 }
+@media (max-width: 600px) {
+  .profileCont .profile img {
+    height: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .profileCont .profile img {
+    height: 45%;
+  }
+}
 .profileCont .profile p {
   text-align: center;
+  border-bottom: 1px solid grey;
 }
 @media (max-width: 800px) {
   .profileCont .profile p {
     height: 8%;
+  }
+}
+@media (max-width: 600px) {
+  .profileCont .profile p {
+    height: 13%;
+  }
+}
+@media (max-width: 500px) {
+  .profileCont .profile p {
+    height: 15%;
   }
 }
 .profileCont .profile a {

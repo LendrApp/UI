@@ -24,17 +24,36 @@
       &:hover {
                transform: scale(1.1);
             }
+      
 
       img {
          height: 72%;
          border-radius: 8rem;
+
+         @media @bigMobile {
+            height: 50%;
+         }
+         @media @mobile {
+            height: 45%;
+         }
       }
 
       p {
          text-align: center;
+         border-bottom: 1px solid grey;
+
 
          @media @tablet {
             height:8%;
+         }
+
+         @media @bigMobile {
+            height: 13%
+         }
+
+         @media @mobile {
+            // border: 1px solid red;
+            height: 15%;
          }
       }
 

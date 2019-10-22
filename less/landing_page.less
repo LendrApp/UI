@@ -72,7 +72,6 @@
       margin-top: 4rem;
       .flex();
       width: 100%;
-      text-decoration: underline;
    }
    .possContent {
       .flex(@justify: space-around);
@@ -93,6 +92,7 @@
          // border: 1px solid red;
          width: 45%;
          height: 30rem;
+         border-radius: 8px;
          .flex();
 
          @media @bigMobile {
@@ -153,9 +153,8 @@
    @media @tablet {
       height: 30rem;
    }
-
-   .testTitle {
-      text-decoration: underline;
+   .testTitle{
+      margin-bottom: 4rem;
    }
 
    .userWrapper {
@@ -166,12 +165,25 @@
       .flex();
       flex-wrap: wrap;
       height: 80rem;
-      margin: 0 0;
+
+      @media @mobile {
+         justify-content: space-around;
+         height: 100%;
+
+      }
 
       .userRow {
          width: 100%;
          .flex(@justify: space-evenly);
          margin: 4rem 0;
+
+         @media @mobile {
+            flex-direction: column;
+            align-content: space-around;
+            width: 45%;
+            height: 100%;
+            margin: 0;
+         }
 
          .user {
             border: 1px solid white;
@@ -179,9 +191,10 @@
             background-color: rgba(0, 0, 0, 0.7);
             .flex(@direction: column);
             align-items: center;
+            border-radius: 5px;
 
             @media @mobile {
-               width: 50%;
+               width: 100%;
             }
 
             p {
@@ -201,7 +214,7 @@
    .cta2Title {
       width: 40%;
       text-align: center;
-      text-decoration: underline;
+      margin: 3rem 0;
 
       @media @mobile {
          width: 100%;
@@ -210,7 +223,7 @@
 
    .ctaButton {
       width: 200px;
-      border: 3px solid black;
+      border: 3px solid forestgreen;
       border-radius: 4rem;
       height: 5rem;
       .flex();
