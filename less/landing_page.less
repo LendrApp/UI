@@ -1,35 +1,54 @@
 .container {
+   background-color: white;
    .headerImg {
-      height: 50vh;
+      // border:1px solid red;
+      height: 50rem;
       background: url(../images/bike.jpg) blue;
       background-position: center;
       background-size: 100%;
+
+      @media @tablet {
+         height: 40rem;
+      }
    }
 }
 
 .pitch {
    // border: 1px solid red;
-   width: 40%;
+   width: 450px;
    height: 100%;
    color: white;
    background-color: rgba(60, 179, 113, 0.75);
+
+   @media @tablet {
+      width: 100%;
+   }
 
    .flex(@justify: space-evenly, @direction: column);
    align-items: center;
 
    .pitchContent {
-      border-radius: 50rem;
-      height: 40%;
+      height: 60%;
       width: 75%;
+      // border:1px solid red;
+
+      @media @tablet {
+         height: 40%;
+      }
+
       p {
          text-align: center;
          font-size: 4rem;
+
+         @media @bigMobile {
+            font-size: 3.5rem;
+         }
       }
    }
 
    .cta {
-      width: 55%;
-      height: 15%;
+      width: 240px;
+      height: 55px;
       font-size: 3rem;
       background-color: @bg_color;
       border: 5px solid white;
@@ -50,7 +69,7 @@
    background-color: white;
 
    .possTitle {
-      margin-top: 8rem;
+      margin-top: 4rem;
       .flex();
       width: 100%;
       text-decoration: underline;
@@ -62,89 +81,188 @@
       margin: 3rem 0;
       height: 40rem;
       background: lightyellow;
+      align-items: center;
+
+      @media @mobile {
+         flex-direction: column;
+         height: 50rem;
+         justify-content: space-evenly;
+      }
 
       img {
          // border: 1px solid red;
          width: 45%;
+         height: 30rem;
          .flex();
+
+         @media @bigMobile {
+            height: 25rem;
+         }
+
+         @media @mobile {
+            height: 25rem;
+            width: 65%;
+         }
       }
       .possDescription {
          // border: 1px solid pink;
          width: 35%;
          .flex(@justify: space-evenly, @direction:column);
+         height: 100%;
+
+         @media @mobile {
+            width: 100%;
+            height: 45%;
+         }
 
          p {
-            height: 10rem;
+            height: 13rem;
             border-top: 2px solid lightgrey;
             border-bottom: 2px solid lightgrey;
             font-size: 2.5rem;
             .flex();
             align-items: center;
             text-align: center;
+
+            @media @bigMobile {
+               font-size: 2rem;
+            }
+            @media @mobile {
+               height: 8rem;
+            }
          }
       }
    }
    .miscItems {
       flex-direction: row-reverse;
+
+      @media @mobile {
+         flex-direction: column;
+      }
    }
 }
 
 .testimonials {
-   margin: 8rem 0;
+   margin: 4rem 0;
    // border: 1px solid red;
    height: 50rem;
    background-color: white;
    .flex(@direction: column);
    align-items: center;
 
+   @media @tablet {
+      height: 30rem;
+   }
+
    .testTitle {
       text-decoration: underline;
    }
 
    .userWrapper {
+      width: 100%;
       background: url(../images/tool_drawer.jpg) blue;
       background-position: center;
-      background-size: 100%;
+      background-size: 175%;
       .flex();
       flex-wrap: wrap;
       height: 80rem;
-      margin: 3rem 0;
-      .user {
-         margin: 5rem 12rem;
-         height: 20%;
-         border: 1px solid white;
-         width: 22%;
-         background-color: rgba(0, 0, 0, 0.8);
-         .flex(@direction: column);
-         align-items: center;
-         
-         p{
-            color: white;
+      margin: 0 0;
+
+      .userRow {
+         width: 100%;
+         .flex(@justify: space-evenly);
+         margin: 4rem 0;
+
+         .user {
+            border: 1px solid white;
+            width: 35%;
+            background-color: rgba(0, 0, 0, 0.7);
+            .flex(@direction: column);
+            align-items: center;
+
+            @media @mobile {
+               width: 50%;
+            }
+
+            p {
+               color: white;
+               text-align: center;
+            }
          }
       }
    }
 }
 
-.cta2{
-   border: 1px solid red;
+.cta2 {
    .flex(@direction: column);
    align-items: center;
+   padding-bottom: 4rem;
 
    .cta2Title {
-      border: 1px solid green;
       width: 40%;
       text-align: center;
+      text-decoration: underline;
+
+      @media @mobile {
+         width: 100%;
+      }
    }
 
-   .ctaButton{
-      text-align: center;
-      width: 10%;
-      border: 2px solid black;
-      
-      p{
-         border:1px solid red;
-         height:5rem;
-         font-size: 2rem;
+   .ctaButton {
+      width: 200px;
+      border: 3px solid black;
+      border-radius: 4rem;
+      height: 5rem;
+      .flex();
+      align-items: center;
+      background-color: @bg_color;
+
+      &:hover {
+         background-color: @hover_bg_color;
+      }
+
+      a {
+         height: 4rem;
+         font-size: 2.5rem;
+         width: 100%;
+         .flex();
+         align-items: center;
+         color: white;
+         &:hover {
+            color: black;
+         }
+      }
+   }
+}
+
+footer {
+   margin: 3rem 0;
+   background-color: @bg_color;
+   height: 5rem;
+   .flex();
+   align-items: center;
+
+   .footerContent {
+      .flex(@justify: space-evenly);
+      align-items: center;
+      width: 100%;
+
+      p {
+         height: 2.5rem;
+      }
+
+      a {
+         border: 3px solid white;
+         width: 100px;
+         border-radius: 2rem;
+         height: 50%;
+         .flex();
+         align-items: center;
+
+         &:hover {
+            background: @hover_bg_color;
+            color: @hover_color;
+         }
       }
    }
 }

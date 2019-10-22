@@ -65,6 +65,8 @@ body {
   font-weight: 400;
   line-height: 1.3;
   color: #222;
+  background-color: #3cb371;
+  margin: 3rem;
 }
 h1,
 h2,
@@ -94,40 +96,66 @@ img {
   height: auto;
 }
 .container {
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 .navigation {
   font-size: 2rem;
   color: white;
+  background-color: #3cb371;
+}
+.navigation .navWrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 1rem auto;
   display: flex;
   justify-content: space-between;
   align-content: center;
   flex-direction: row;
-  background-color: #3cb371;
   align-items: center;
 }
-.navigation .linksWrapper {
-  width: 40%;
+@media (max-width: 800px) {
+  .navigation .navWrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+}
+.navigation .navWrapper .linksWrapper {
+  width: 60%;
   height: 5rem;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: row;
 }
-.logo {
+@media (max-width: 800px) {
+  .navigation .navWrapper .linksWrapper {
+    width: 100%;
+  }
+}
+.navigation .navWrapper .logo {
   background: forestgreen;
-  width: 18%;
+  width: 175px;
   border-radius: 4rem;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: row;
 }
-.logo i {
-  color: aqua;
+@media (max-width: 800px) {
+  .navigation .navWrapper .logo {
+    width: 100%;
+  }
 }
-.logo h1 {
+.navigation .navWrapper .logo i {
+  color: aqua;
+  font-size: 4rem;
+}
+.navigation .navWrapper .logo h1 {
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -145,7 +173,7 @@ img {
 }
 .navLinks a {
   border: 1px solid white;
-  width: 20%;
+  width: 22%;
   border-radius: 2rem;
   height: 50%;
   display: flex;
@@ -157,15 +185,24 @@ img {
 .navLinks a:hover {
   background: aqua;
   color: black;
+  border: 1px solid black;
+}
+.container {
+  background-color: white;
 }
 .container .headerImg {
-  height: 50vh;
+  height: 50rem;
   background: url(../images/bike.jpg) blue;
   background-position: center;
   background-size: 100%;
 }
+@media (max-width: 800px) {
+  .container .headerImg {
+    height: 40rem;
+  }
+}
 .pitch {
-  width: 40%;
+  width: 450px;
   height: 100%;
   color: white;
   background-color: rgba(60, 179, 113, 0.75);
@@ -175,18 +212,32 @@ img {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .pitch {
+    width: 100%;
+  }
+}
 .pitch .pitchContent {
-  border-radius: 50rem;
-  height: 40%;
+  height: 60%;
   width: 75%;
+}
+@media (max-width: 800px) {
+  .pitch .pitchContent {
+    height: 40%;
+  }
 }
 .pitch .pitchContent p {
   text-align: center;
   font-size: 4rem;
 }
+@media (max-width: 600px) {
+  .pitch .pitchContent p {
+    font-size: 3.5rem;
+  }
+}
 .pitch .cta {
-  width: 55%;
-  height: 15%;
+  width: 240px;
+  height: 55px;
   font-size: 3rem;
   background-color: #3cb371;
   border: 5px solid white;
@@ -209,7 +260,7 @@ img {
   background-color: white;
 }
 .possibilities .possTitle {
-  margin-top: 8rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -226,13 +277,33 @@ img {
   margin: 3rem 0;
   height: 40rem;
   background: lightyellow;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .possibilities .possContent {
+    flex-direction: column;
+    height: 50rem;
+    justify-content: space-evenly;
+  }
 }
 .possibilities .possContent img {
   width: 45%;
+  height: 30rem;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: row;
+}
+@media (max-width: 600px) {
+  .possibilities .possContent img {
+    height: 25rem;
+  }
+}
+@media (max-width: 500px) {
+  .possibilities .possContent img {
+    height: 25rem;
+    width: 65%;
+  }
 }
 .possibilities .possContent .possDescription {
   width: 35%;
@@ -240,9 +311,16 @@ img {
   justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .possibilities .possContent .possDescription {
+    width: 100%;
+    height: 45%;
+  }
 }
 .possibilities .possContent .possDescription p {
-  height: 10rem;
+  height: 13rem;
   border-top: 2px solid lightgrey;
   border-bottom: 2px solid lightgrey;
   font-size: 2.5rem;
@@ -253,11 +331,26 @@ img {
   align-items: center;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .possibilities .possContent .possDescription p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .possibilities .possContent .possDescription p {
+    height: 8rem;
+  }
+}
 .possibilities .miscItems {
   flex-direction: row-reverse;
 }
+@media (max-width: 500px) {
+  .possibilities .miscItems {
+    flex-direction: column;
+  }
+}
 .testimonials {
-  margin: 8rem 0;
+  margin: 4rem 0;
   height: 50rem;
   background-color: white;
   display: flex;
@@ -266,56 +359,134 @@ img {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .testimonials {
+    height: 30rem;
+  }
+}
 .testimonials .testTitle {
   text-decoration: underline;
 }
 .testimonials .userWrapper {
+  width: 100%;
   background: url(../images/tool_drawer.jpg) blue;
   background-position: center;
-  background-size: 100%;
+  background-size: 175%;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   height: 80rem;
-  margin: 3rem 0;
+  margin: 0 0;
 }
-.testimonials .userWrapper .user {
-  margin: 5rem 12rem;
-  height: 20%;
+.testimonials .userWrapper .userRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+  margin: 4rem 0;
+}
+.testimonials .userWrapper .userRow .user {
   border: 1px solid white;
-  width: 22%;
-  background-color: rgba(0, 0, 0, 0.8);
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   align-items: center;
 }
-.testimonials .userWrapper .user p {
+@media (max-width: 500px) {
+  .testimonials .userWrapper .userRow .user {
+    width: 50%;
+  }
+}
+.testimonials .userWrapper .userRow .user p {
   color: white;
+  text-align: center;
 }
 .cta2 {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 4rem;
 }
 .cta2 .cta2Title {
-  border: 1px solid green;
   width: 40%;
   text-align: center;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .cta2 .cta2Title {
+    width: 100%;
+  }
 }
 .cta2 .ctaButton {
-  text-align: center;
-  width: 10%;
-  border: 2px solid black;
-}
-.cta2 .ctaButton p {
-  border: 1px solid red;
+  width: 200px;
+  border: 3px solid black;
+  border-radius: 4rem;
   height: 5rem;
-  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: #3cb371;
+}
+.cta2 .ctaButton:hover {
+  background-color: aqua;
+}
+.cta2 .ctaButton a {
+  height: 4rem;
+  font-size: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+.cta2 .ctaButton a:hover {
+  color: black;
+}
+footer {
+  margin: 3rem 0;
+  background-color: #3cb371;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footerContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+footer .footerContent p {
+  height: 2.5rem;
+}
+footer .footerContent a {
+  border: 3px solid white;
+  width: 100px;
+  border-radius: 2rem;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footerContent a:hover {
+  background: aqua;
+  color: black;
 }
