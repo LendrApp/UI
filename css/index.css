@@ -158,9 +158,6 @@ img {
   background: aqua;
   color: black;
 }
-.container {
-  background-color: #3cb371;
-}
 .container .headerImg {
   height: 50vh;
   background: url(../images/bike.jpg) blue;
@@ -173,7 +170,7 @@ img {
   color: white;
   background-color: rgba(60, 179, 113, 0.75);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
   flex-direction: column;
   align-items: center;
@@ -258,4 +255,67 @@ img {
 }
 .possibilities .miscItems {
   flex-direction: row-reverse;
+}
+.testimonials {
+  margin: 8rem 0;
+  height: 50rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials .testTitle {
+  text-decoration: underline;
+}
+.testimonials .userWrapper {
+  background: url(../images/tool_drawer.jpg) blue;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 80rem;
+  margin: 3rem 0;
+}
+.testimonials .userWrapper .user {
+  margin: 5rem 12rem;
+  height: 20%;
+  border: 1px solid white;
+  width: 22%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials .userWrapper .user p {
+  color: white;
+}
+.cta2 {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.cta2 .cta2Title {
+  border: 1px solid green;
+  width: 40%;
+  text-align: center;
+}
+.cta2 .ctaButton {
+  text-align: center;
+  width: 10%;
+  border: 2px solid black;
+}
+.cta2 .ctaButton p {
+  border: 1px solid red;
+  height: 5rem;
+  font-size: 2rem;
 }
