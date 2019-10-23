@@ -8,7 +8,7 @@
 .profileCont {
    .flex(@justify: space-evenly);
    // border:1px solid red;
-   background-color: lightyellow;
+   background-color: @secondary_bg_color;
    margin: 4rem 0;
    height: 44rem;
 
@@ -17,6 +17,7 @@
    }
 
    .profile {
+      .flex(@justify: space-evenly,@direction: column);
       width: 30%;
       // border:1px solid blue;
       height: 100%;
@@ -27,6 +28,7 @@
       
 
       img {
+         margin-top: 3%;
          height: 72%;
          border-radius: 8rem;
 
@@ -39,6 +41,7 @@
       }
 
       p {
+         height: 6%;
          text-align: center;
          border-bottom: 1px solid grey;
 

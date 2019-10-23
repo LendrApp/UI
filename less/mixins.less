@@ -10,3 +10,21 @@
    width: 100%;
    margin: 0 auto;
 }
+
+.ctaButton(){
+    width: 240px;
+      height: 55px;
+      font-size: 3rem;
+      background-color: @bg_color;
+      border: 5px solid @cta_border_color;
+      border-radius: 30rem;
+      .flex();
+      align-items: center;
+
+      &:hover {
+         background-color: @secondary_bg_color;
+         color: @hover_color;
+         border-color: @hover_border_color;
+         
+      }
+}
